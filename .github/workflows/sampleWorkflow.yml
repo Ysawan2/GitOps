@@ -1,0 +1,13 @@
+name: sampleWorkflow
+on:
+  push:
+    branches:
+      - main
+jobs:
+  MyFirstJob:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "!wave Hello World"
+      # - name: Checkout
+      #   uses: actions/checkout@main
+        
