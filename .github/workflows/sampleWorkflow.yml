@@ -8,6 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "!wave Hello World"
-      # - name: Checkout
-      #   uses: actions/checkout@main
+      - name: Checkout
+        uses: actions/checkout@main
+      - run: |
+          echo "The repository name is ${{ github.repository }} contains the following files:" 
+          tree
         
